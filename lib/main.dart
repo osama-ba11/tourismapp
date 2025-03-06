@@ -24,17 +24,47 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Tourism Application",
-          style: TextStyle(
-            color: Colors.black,
-            letterSpacing: 3.0,
+        appBar: AppBar(
+          title: Text(
+            "Tourism App",
+            style: TextStyle(
+              color: Colors.black,
+              letterSpacing: 3.0,
+            ),
           ),
+          centerTitle: true,
+          backgroundColor: Colors.green,
         ),
-        centerTitle: true,
-        backgroundColor: Colors.green,
-      ),
-    );
+        body: Column(
+          children: [
+            Container(
+              padding: EdgeInsets.all(20),
+              color: Colors.greenAccent,
+              child: Image(
+                image: AssetImage('images/Salalah1.jpg'),
+              ),
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: SizedBox(
+                    width: 200,
+                    child: Image(
+                      image: AssetImage('images/Salalah2.jpg'),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: SizedBox(
+                    width: 200,
+                    child: Image(
+                      image: AssetImage('images/Salalah3.jpg'),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ));
   }
 }
