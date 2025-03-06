@@ -26,7 +26,7 @@ class MyHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Tourism App",
+          "Tourism Application",
           style: TextStyle(
             color: Colors.black,
             letterSpacing: 3.0,
